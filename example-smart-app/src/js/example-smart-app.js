@@ -27,6 +27,8 @@
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
+          console.log("Received Patient Info");
+          
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
@@ -52,7 +54,7 @@
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
           
-          cosole.log("Printing weight...");
+          console.log("Printing weight...");
           console.log(weight[0]);
           p.weight = getQuantityValueAndUnit(weight[0]);
 
