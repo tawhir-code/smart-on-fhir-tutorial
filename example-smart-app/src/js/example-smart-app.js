@@ -57,6 +57,7 @@
           console.log("Printing weight...");
           console.log(weight[0]);
           p.weight = getQuantityValueAndUnit(weight[0]);
+          console.log(p.weight);
 
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
